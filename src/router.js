@@ -40,6 +40,11 @@ export default new Router({
       path: '/avator',
       name: 'avator',
       component: () => import('./views/avator')
+    },
+    {
+      path: '/scroll-bar',
+      name: 'scroll-bar',
+      component: () => import('./views/scrollBar')
     }
   ]
 })

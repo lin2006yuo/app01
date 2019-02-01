@@ -1,5 +1,5 @@
 <template>
-    <div class="echo">
+    <div class="echo" ref="echo">
         <ZoomImage class='zoomimage' imageWidth="500"  imageHeight="300" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548910023842&di=2d0d22475b0dbd640f5052d4e9e42cd5&imgtype=jpg&src=http%3A%2F%2Fimg3.imgtn.bdimg.com%2Fit%2Fu%3D3445752448%2C3059857660%26fm%3D214%26gp%3D0.jpg" />
         <ZoomImage class='zoomimage' imageWidth="500"  imageHeight="300" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548910182206&di=cfdab89ded65fa6ce4b48a8165d39fd6&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2Fattachments2%2Fday_100724%2F10072416175a3461d1905f89a0.jpg" />
         <ZoomImage class='zoomimage' imageWidth="500"  imageHeight="300" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548910283828&di=c0c32b1da9b1d7f5f10f3c4e0eceb6e6&imgtype=0&src=http%3A%2F%2Fatt.bbs.duowan.com%2Fforum%2F201309%2F27%2F121732olrimy3dkxgrmdyl.jpg" />
@@ -27,11 +27,14 @@ import ZoomImage from '../components/ZoomImage'
 export default {
     components: {
         ZoomImage
+    },
+    mounted() {
     }
 }
 </script>
 <style lang="stylus">
     .echo {
+        overflow hidden
         display flex
         flex-direction column
         justify-content center

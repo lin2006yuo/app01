@@ -5,6 +5,7 @@ import store from './store'
 import VueLazyload from 'vue-lazyload'
 import loading from './assets/loading.gif'
 import './assets/reset.stylus'
+import 'perfect-scrollbar/css/perfect-scrollbar.css'
 
 Vue.config.productionTip = false
 

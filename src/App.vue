@@ -7,6 +7,7 @@
       <router-link to="/sort">sort</router-link> |
       <router-link to="/pose">pose</router-link> |
       <router-link to="/avator">avator</router-link> |
+      <router-link to="/scroll-bar">scroll-bar</router-link> |
     </div>
     <router-view/>
   </div>
